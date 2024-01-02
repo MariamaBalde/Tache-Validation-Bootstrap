@@ -125,12 +125,12 @@ header .container .list-unstyled {
     padding: 100px 0;
     background-color: #f0f8ff;
 }
-#about .img img{
+/* #about .img img{
     width: 550px;
     height: 600px;
     border: 1px solid transparent;
     border-radius: 20px;
-}
+} */
 
 #about .contenu .part1,
 #about .contenu .part2first{
