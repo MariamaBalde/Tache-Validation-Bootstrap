@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------------------------------------header------------------------------------ */
+
+header {
+    background-color: #5bc1ac;
+}
+
+header .container p,
+header .container .fa-brands {
+    font-size: 18px;
+}
+
+header .container .list-unstyled {
+    margin-left: 150px;
+}
+
+/* ---------------------------------------Navbar------------------------------------ */
+
+.navbar .navbar-brand .img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar .navbar-brand span strong {
+    color: #5bc1ac;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar .navbar-brand span p {
+    font-size: 10px;
+    font-weight: bolder;
+    color: rgb(3, 3, 44);
+}
+
+.navbar .nav-item {
+    margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(7, 149, 149);
+}
+
+.navbar .nav-item .dropdown-item:hover {
+    color: #5bc1ac;
+}
+
+.main-btn {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 23px;
+    background-color: transparent;
+    border: 2px solid rgb(99, 97, 97);
+    color: gray;
+    font-weight: 500px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.main-btn:hover {
+    background-color: #5bc1ac;
+    border-color: #5bc1ac;
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------------------------------------Home------------------------------------ */
+
+#home #carouselExampleControls .carousel-item .carousel-img {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+}
+
+#home #carouselExampleControls .carousel-control-prev .carousel-control-prev-icon,
+#home #carouselExampleControls .carousel-control-next .carousel-control-next-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(9, 2, 36);
+}
+
+#home .card .card-img-top {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+#home .card .card-body .card-title,
+#home .card a {
+    color: #5bc1ac;
+}
+
+#home .card {
+    border: none;
+}
+
+#home .card:hover {
+    border: 1px solid rgb(251, 250, 250);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(148, 143, 143, 0.8);
+}
+
+#home .card .card-img-top:hover {
+    width: 80px;
+    height: 80px;
+}
+
+/* ---------------------------------------About------------------------------------ */
+#about{
+    padding: 100px 0;
+    background-color: #f0f8ff;
+}
+#about .img img{
+    width: 550px;
+    height: 600px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+#about .contenu .part1,
+#about .contenu .part2first{
+    padding:30px 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+#about .contenu .part1 .part1title{
+    /* color: rgb(5, 5, 63); */
+    color: #5a6f80;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#about .contenu .part1 .part1subtitle,
+#about .contenu .part2 .part1subtitle{
+    font-size: 22px;
+    font-weight: bold;
+    color: #5bc1ac;
+}
+
+#about .contenu .part1 .part1para{
+    font-size: 16px;
+}
+
+#about .contenu .part2first .part2para{
+    font-size: 18px;
+}
+
+#about .contenu .part2second{
+    padding:20px 60px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+
+}
+
+#about .contenu .part2second .datedonation .datedonation1,
+#about .contenu .part2second .datedonation .datedonation2{
+  position: relative;
+  top: 20px;
+}
+
+#about .contenu .part2second .datedonation h1{
+color: #5bc1ac;
+font-size: 50px;
+font-weight: bold;
+/* color: #5a6f80; */
+}
+
+
+#about .contenu .part2second .datedonation p{
+     color: #5a6f80;
+    font-size: 20px;
+    font-weight: bold;
+    }
+ 
+
+
+
+
+
+
+/* ---------------------------------------Causes------------------------------------ */
+/* ---------------------------------------Volunter------------------------------------ */
+/* ---------------------------------------News------------------------------------ */
+/* ---------------------------------------Contact------------------------------------ */
+/* ---------------------------------------Donation------------------------------------ */
+
+
+
+
