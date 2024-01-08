@@ -121,85 +121,721 @@ header .container .list-unstyled {
 }
 
 /* ---------------------------------------About------------------------------------ */
-#about{
+#about .aboutstory {
     padding: 100px 0;
     background-color: #f0f8ff;
 }
-/* #about .img img{
-    width: 550px;
-    height: 600px;
-    border: 1px solid transparent;
-    border-radius: 20px;
-} */
 
-#about .contenu .part1,
-#about .contenu .part2first{
-    padding:30px 35px;
+#about .aboutstory .img .img-fluid {
     border: 1px solid transparent;
     border-radius: 20px;
 }
 
-#about .contenu .part1 .part1title{
+#about .aboutstory .contenu .part1,
+#about .contenu .part2first {
+    padding: 30px 35px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+#about .aboutstory .contenu .part1 .part1title {
     /* color: rgb(5, 5, 63); */
     color: #5a6f80;
     font-size: 50px;
     font-weight: bolder;
 }
 
-#about .contenu .part1 .part1subtitle,
-#about .contenu .part2 .part1subtitle{
+#about .aboutstory .contenu .part1 .part1subtitle,
+#about .contenu .part2 .part1subtitle {
     font-size: 22px;
     font-weight: bold;
     color: #5bc1ac;
 }
 
-#about .contenu .part1 .part1para{
+#about .aboutstory .contenu .part1 .part1para {
     font-size: 16px;
 }
 
-#about .contenu .part2first .part2para{
+#about .aboutstory .contenu .part2first .part2para {
     font-size: 18px;
 }
 
-#about .contenu .part2second{
-    padding:20px 60px;
+#about .aboutstory .contenu .part2second {
+    padding: 20px 60px;
     border: 1px solid transparent;
     border-radius: 20px;
 
 }
 
-#about .contenu .part2second .datedonation .datedonation1,
-#about .contenu .part2second .datedonation .datedonation2{
-  position: relative;
-  top: 20px;
+#about .aboutstory .contenu .part2second .datedonation .datedonation1,
+#about .aboutstory .contenu .part2second .datedonation .datedonation2 {
+    position: relative;
+    top: 20px;
 }
 
-#about .contenu .part2second .datedonation h1{
-color: #5bc1ac;
-font-size: 50px;
-font-weight: bold;
-/* color: #5a6f80; */
+#about .aboutstory .contenu .part2second .datedonation h1 {
+    color: #5bc1ac;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 
-#about .contenu .part2second .datedonation p{
-     color: #5a6f80;
+#about .aboutstory .contenu .part2second .datedonation p {
+    color: #5a6f80;
     font-size: 20px;
     font-weight: bold;
-    }
- 
+}
+
+#about .aboutfounder {
+    padding: 100px 0;
+}
+
+#about .aboutfounder .img-fluid {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(148, 143, 143, 0.8);
+}
+
+#about .aboutfounder .containfounder .describefounder {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#about .aboutfounder .containfounder .describefounder h2 {
+    color: #5a6f80;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#about .aboutfounder .containfounder .describefounder h5,
+#about .aboutfounder .containfounder p {
+    font-size: 16px;
+}
 
 
+#about .aboutfounder .containfounder .social-icon a {
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    font-size: 15px;
+    display: inline-block;
+    border: 1px solid #5a6f80;
+    color: white;
+    background-color: #06111b;
+    text-align: center;
+    border-radius: 100%;
+}
+
+#about .aboutfounder .containfounder .social-icon a:hover {
+    background-color: #5bc1ac;
+    border-color: #5bc1ac;
+    color: white;
+}
+
+#about .aboutmake {
+    background-color: #f0f8ff;
+}
+
+#about .aboutmake .container {
+    padding: 100px 0;
+}
+
+#about .aboutmake .container h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #5a6f80;
+}
+
+#about .aboutmake .container .paraboutmake {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#about .aboutmake .container .paraboutmake #colordonate {
+    color: #5a6f80;
+    position: relative;
+    top: 10px;
+}
 
 
+#about .aboutmake .container .paraboutmake #colordonate:hover {
+    color: #5bc1ac;
+}
+
+#about .aboutmake .container .paraboutmake #round {
+    border: 1px solid #5a6f80;
+    background-color: #5a6f80;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+#about .aboutmake .container .paraboutmake #round:hover {
+    border: 1px solid #5bc1ac;
+    background-color: #5bc1ac;
+}
+
+/* Un pseudo-élément CSS est utilisé pour styliser les parties spécifiées d'un élément.
+      Styliser la première lettre ou ligne d'un élément
+    Insérer du contenu avant ou après le contenu d'un élément like before and after
+  */
+
+#about .aboutmake {
+    position: relative;
+    overflow: hidden;
+}
+
+#about .aboutmake::before {
+    content: "";
+    background-color: #5bc1ac;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    left: -30px;
+    margin: auto;
+}
+
+#about .aboutmake::after {
+    content: "";
+    border: 20px solid #597081;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
 
 
 /* ---------------------------------------Causes------------------------------------ */
+
+#causes {
+    margin: 100px 0;
+}
+
+#causes .card {
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+#causes .card:hover {
+    border: none;
+    box-shadow: 0 0 30px grey;
+}
+
+#causes .card .card-img-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#causes .card-body {
+    padding: 20px;
+}
+
+#causes .card-body .card-title {
+    color: #5bc1ac;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px 0;
+}
+
+#causes .card-body .card-text {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+#causes .card-body .progress {
+    height: 5px;
+}
+
+#causes .card-body .progress .progress-bar {
+    background-color: grey;
+}
+
+#causes .card-body .paraprogress p {
+    font-size: 16px;
+}
+
+
+#causes .card .card-footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+#causes .card .card-footer:hover {
+    background-color: #5bc1ac;
+    border-color: #5bc1ac;
+}
+
 /* ---------------------------------------Volunter------------------------------------ */
+
+#volunteer {
+    background-color: #5a6f80;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#volunteer .volunteerform {
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+#volunteer .volunteerform h4 {
+    color: black;
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#volunteer .volunteerform input,
+#volunteer .volunteerform textarea {
+    background-color: #9eded1;
+    outline: none;
+    box-shadow: none;
+}
+
+#volunteer .volunteerform textarea {
+    height: 100px;
+}
+
+#contact .contactform form input,
+#contact .contactform form textarea {
+    background-color: white;
+    border-color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+#volunteer .volunteerform .items input::placeholder,
+#contact .contactform form .items input::placeholder {
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+#volunteer .volunteerform .items input[type="button"],
+#contact .contactform form .items input[type="button"] {
+    background-color: #6c757d;
+    color: white;
+    border-radius: 20px;
+}
+
+#volunteer .volunteerportrait {
+    margin-top: -70px;
+}
+
+@media screen and (max-width: 600px) {
+    #volunteer .volunteerportrait {
+        margin-top: 0;
+    }
+}
+
+#volunteer .imgvolunteer img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+#volunteer .paravolunteer p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+#volunteer::after {
+    content: "";
+    position: absolute;
+    bottom: -110px;
+    right: -80px;
+    background-color: #5bc1ac;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
 /* ---------------------------------------News------------------------------------ */
-/* ---------------------------------------Contact------------------------------------ */
+#news{
+    padding: 80px 0;
+}
+
+#news .firstpartnews{
+    margin-bottom: 100px;
+}
+
+#news .firstpartnews .subpart1 .card{
+    border: none;
+}
+#news .firstpartnews .subpart1 .card img{
+    border-radius: 30px 30px 0 0;
+}
+
+#news .firstpartnews .subpart1 .card-footer{
+    border-radius: 0 0 30px 30px;
+}
+
+#news .firstpartnews .subpart1 .card-footer ul,
+#news .firstpartnews .subpart1 .list ul,
+#news .firstpartnews .subpart1 .list p{
+    font-size: 15px;
+}
+
+#news .firstpartnews .subpart1 .list ul i{
+    color: #b2b5b7;
+}
+
+#news .firstpartnews .subpart1 .list h5 a{
+  color: black;
+  font-weight: bold;
+}
+
+#news .firstpartnews .subpart1 .list h5 a:hover{
+    color: #5bc1ac;
+  }
+
+  #news .part1{
+    position: relative;
+    overflow: hidden;
+  }
+
+  #news .part1 input{
+  width: 320px;
+  height: 53px;
+  border-radius: 10px;
+  background-color: #e1f4f0;
+  border-color: #e1f4f0;
+  }
+
+  #news .part1 i{
+   position: absolute;
+   bottom: 20px;
+   left: 280px;
+   color: #b4b7ba;
+  }
+
+#news .part2 h5,
+#news .part3 h5,
+#news .part4 h5{
+    color: #5bc1ac;
+    font-weight: bold;
+} 
+
+#news .part2 .content .sect img{
+   width: 150px;
+   height: 90px;
+   border-radius: 12px 12px 0 0;
+}
+
+#news .part2 .content .sect .paracontent{
+    font-size: 16px;
+}
+
+#news .part2 .content .sect .paracontent h6 a{
+    color: black;
+}
+
+#news .part3 ul,
+#news .part4 ul{
+    font-size: 14px;
+}
+
+#news .part3 ul li a,
+#news .part4 ul li a{
+    color: black;
+}
+
+#news .part3 ul li p{
+    color: white;
+    border-radius: 20px;
+    width: 30px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+#news .part4 ul li a{
+    border-radius: 20px;
+    width: 50px;
+    height: 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+
+#news .part5 form h5{
+    color: #5bc1ac;
+    font-weight: bold;
+    /* padding-top: 10px; */
+    padding: 10px 0;
+} 
+
+#news .part5 form{
+   background-color:#f0f8ff;
+   width: 330px;
+   height: 230px;
+   padding:15px 35px;
+   border-radius: 10px;
+   border: none;
+} 
+
+#news .part5 form input{
+    outline: none;
+    box-shadow: none;
+    border-color: white;
+    padding: 10px 0;
+}
+
+#news .part5 form input[type="button"] {
+    background-color: #597081;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+#news .secondpartnews{
+    background-color:#f0f8ff;
+    padding: 100px 0;
+}
+
+#news .secondpartnews h2{
+    color: #597081;
+}
+
+#news .secondpartnews .paraquote{
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+#news .secondpartnews .paraquote i{
+   color: grey;
+}
+
+#news .secondpartnews .round{
+    border-radius: 20px;
+    width: 170px;
+    height: 30px;
+    line-height: 11px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid grey;
+    padding: 10px 0;
+    color: white;
+    background-color: #5bc1ac;
+    border-color: #5bc1ac;
+}
+
+#news .secondpartnews .social-icon li img {
+    width: 38px;
+    height: 38px;
+    line-height: 35px;
+    font-size: 15px;
+    display: inline-block;
+    border-color: transparent;
+    text-align: center;
+    border-radius: 100%;
+    margin: auto;
+}
+
+#news .secondpartnews{
+    position: relative;
+    overflow: hidden;
+}
+
+
+#news .secondpartnews::before{
+    content: "";
+    position: absolute;
+    top: -150px;
+    left: -30px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #5bc1ac;
+}
+
+#news .secondpartnews::after{
+    content: "";
+    position: absolute;
+    bottom:-115px ;
+    right:-80px ;
+    background-color: #597081;
+    border-radius: 50%;
+    width:350px ;
+    height: 350px;
+}
+
+
+
+
+
 /* ---------------------------------------Donation------------------------------------ */
 
+/* ---------------------------------------Contact------------------------------------ */
 
+#contact {
+    margin: 100px 0;
+}
+
+#contact .part1 .manager {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 17px;
+}
+
+#contact .part1 .manager img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#contact .part1 hr{
+    width: 350px;
+   color: #737b83;
+}
+
+#contact .part1 h2{
+    color: #5bc1ac;
+}
+
+#contact .part1 .no {
+font-size: 15px;
+}
+
+#contact .part1 .no .fa-solid{
+    /* background-color: grey; */
+    color: grey; 
+}
+
+#contact .part1 .buttondirection .main-btn{
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 23px;
+    background-color: #597081;
+    border: 2px solid #597081;
+    color:white;
+    font-weight: 500px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+#contact .part1 .buttondirection .main-btn:hover {
+    background-color: #5bc1ac;
+ border-color: #5bc1ac;
+}
+
+
+#contact .contactform form{
+    background-color: #f0f8ff;
+    border-radius: 5%;
+    width: 450px;
+    height: 550px;
+    margin: auto;
+    padding:0 20px;
+}
+
+#contact .contactform form h3{
+    color: #597081;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#contact .contactform form p{
+   font-size: 17px;
+}
+
+#contact .contactform form .items textarea{
+height: 200px;
+}
+
+#footer .firstpart{
+    background-color: #06111b;
+    padding: 60px 0;
+}
+
+#footer .imgfooter img{
+    width: 80px;
+    height: 80px;
+}
+
+#footer .firstpart h6{
+    color: #5bc1ac;
+    font-size: 22px;
+ font-weight: bold;
+}
+
+#footer .firstpart .divcontain{
+   gap: 50px;
+}
+
+#footer .firstpart .divcontain ul,
+#footer .contain2 p{
+    font-size: 15px;
+}
+
+#footer .buttondirection .main-btn{
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #597081;
+    border: 2px solid #597081;
+    color:white;
+    text-decoration: none;
+}
+
+#footer .buttondirection .main-btn:hover {
+    background-color: #5bc1ac;
+ border-color: #5bc1ac;
+}
+
+#footer .secondpart{
+    padding: 25px 0;
+    background-color: #597081;
+}
+
+#footer .secondpart p{
+    font-size: 14px;
+    color: white;
+}
+
+
+#footer .secondpart .social-icon a {
+    width: 38px;
+    height: 38px;
+    line-height: 35px;
+    font-size: 15px;
+    display: inline-block;
+    border: 1px solid #5a6f80;
+    color: white;
+    background-color: #06111b;
+    text-align: center;
+    border-radius: 100%;
+}
+
+#footer .secondpart .social-icon a:hover {
+    background-color: #5bc1ac;
+    border-color: #5bc1ac;
+    color: white;
+}
+
+
+.homedonate{
+    width: 100%;
+    height: auto;
+    min-height: 650px;
+    background-image: url(images/about/about-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center center;
+    padding: 200px 0 100px 0;
+}
 
 
